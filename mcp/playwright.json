@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "--prefix",
+        "tools/playwright-mcp",
+        "playwright-mcp",
+        "--isolated",
+        "--output-dir",
+        "review/playwright-mcp"
+      ]
+    }
+  }
+}

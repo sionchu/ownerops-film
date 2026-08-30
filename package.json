@@ -1,0 +1,30 @@
+{
+  "name": "ownerops-film",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cinematic demo production workspace for OwnerOps WebMCP",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "compositions": "remotion compositions src/index.ts",
+    "render:setup-check": "remotion render src/index.ts OwnerOpsFilmSetupCheck renders/setup-check.mp4 --codec h264 --pixel-format yuv420p --overwrite",
+    "capture:product": "node scripts/capture/capture-product.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.518",
+    "@remotion/cli": "4.0.518",
+    "playwright": "1.62.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "remotion": "4.0.518"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "typescript": "7.0.2"
+  },
+  "engines": {
+    "node": ">=22",
+    "npm": ">=10"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "baseUrl": "https://ownerops-webmcp.vercel.app",
+  "outputDir": "assets/product",
+  "shots": [
+    {
+      "id": "opening-state-overscan",
+      "path": "/",
+      "viewport": {"width": 2200, "height": 1400},
+      "deviceScaleFactor": 1,
+      "fullPage": false,
+      "actions": [
+        {"type": "wait", "ms": 1500}
+      ]
+    }
+  ]
+}
