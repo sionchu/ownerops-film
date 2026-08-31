@@ -8,6 +8,10 @@
     "compositions": "remotion compositions src/index.ts",
     "render:setup-check": "remotion render src/index.ts OwnerOpsFilmSetupCheck renders/setup-check.mp4 --codec h264 --pixel-format yuv420p --overwrite",
     "capture:product": "node scripts/capture/capture-product.mjs",
+    "proof:preflight": "node scripts/capture/record-webmcp-proof.mjs preflight",
+    "proof:record": "node scripts/capture/record-webmcp-proof.mjs record",
+    "proof:extract": "node scripts/capture/extract-webmcp-clips.mjs",
+    "test:capture-harness": "node --test scripts/capture/proof-plan.test.mjs",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

@@ -58,10 +58,30 @@ Third-party repositories are cloned into ignored `tools/` directories at pinned 
 npm run compositions
 npm run studio
 npm run capture:product
+npm run proof:preflight
+npm run proof:record -- --take rc-proof-01 --browser-zoom 100
 npm run render:setup-check
 ```
 
 `npm run render:setup-check` renders only a short production-environment slate. It is not final footage and does not reconstruct product or ChatGPT UI.
+
+## Real WebMCP proof capture harness
+
+The harness detects Windows and macOS. Windows is the supported recording path in this revision; macOS performs a truthful preflight and reports recording as unavailable until a non-invasive global marker mechanism is implemented.
+
+On Windows:
+
+1. Open exactly one visible ChatGPT Desktop window with the OwnerOps in-app browser ready.
+2. Run `npm run proof:preflight`.
+3. Close notifications and remove secrets or unrelated account details from the capture area.
+4. Record the visible ChatGPT browser zoom, then run `npm run proof:record -- --take TAKE_ID --browser-zoom 100`.
+5. Keep ChatGPT focused. Press `F8` once after each of the five prompted phases; press `F9` only for an emergency abort.
+6. After the second marker, make exactly one direct candidate edit. Do not undo, redo, or make a second candidate edit.
+7. The harness stops after the fifth marker and extracts five review clips under `assets/chatgpt/takes/TAKE_ID/clips/`.
+
+The harness uses OS window management only to identify and foreground the single ChatGPT window. It records the window bounds with ffmpeg and collects global marker keys, but it never injects clicks, messages, candidate edits, review actions, or Apply. The user performs the real prompt, one candidate edit, exact re-review, and final Apply in one causal take.
+
+Take metadata is written to `assets/chatgpt/takes/TAKE_ID/take.json`. Raw takes, metadata, ffmpeg logs, and extracted review clips are local and ignored. After inspection, promote an accepted set with `npm run proof:extract -- --metadata assets/chatgpt/takes/TAKE_ID/take.json --output-dir assets/chatgpt`. Promotion refuses to overwrite existing accepted footage unless the operator explicitly adds `--overwrite`.
 
 ## Required authentic footage
 

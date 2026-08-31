@@ -66,6 +66,7 @@ mkdir -p \
   "$LOCAL_SKILLS_DIR" \
   "$ROOT_DIR/assets/product" \
   "$ROOT_DIR/assets/chatgpt" \
+  "$ROOT_DIR/assets/chatgpt/takes" \
   "$ROOT_DIR/assets/audio" \
   "$ROOT_DIR/assets/stills" \
   "$ROOT_DIR/review/contact-sheets" \

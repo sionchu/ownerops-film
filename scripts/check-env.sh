@@ -74,6 +74,11 @@ fi
 for file in \
   "$ROOT_DIR/.agents/skills/ownerops-cinematic-demo/SKILL.md" \
   "$ROOT_DIR/.agents/skills/remotion-best-practices/SKILL.md" \
+  "$ROOT_DIR/scripts/capture/record-webmcp-proof.mjs" \
+  "$ROOT_DIR/scripts/capture/extract-webmcp-clips.mjs" \
+  "$ROOT_DIR/scripts/capture/windows/focus-chatgpt.ps1" \
+  "$ROOT_DIR/scripts/capture/windows/capture-hotkeys.ps1" \
+  "$ROOT_DIR/scripts/capture/macos/focus-chatgpt.applescript" \
   "$ROOT_DIR/node_modules/.bin/remotion"; do
   if [[ -e "$file" ]]; then
     printf 'OK      %-18s %s\n' prepared "${file#$ROOT_DIR/}"
@@ -82,6 +87,14 @@ for file in \
     failures=$((failures + 1))
   fi
 done
+
+if node --check "$ROOT_DIR/scripts/capture/record-webmcp-proof.mjs" >/dev/null 2>&1 \
+  && node --check "$ROOT_DIR/scripts/capture/extract-webmcp-clips.mjs" >/dev/null 2>&1; then
+  printf 'OK      %-18s %s\n' capture-harness 'Node entry points parse'
+else
+  printf 'MISMATCH %-18s %s\n' capture-harness 'Node entry point syntax error'
+  failures=$((failures + 1))
+fi
 
 if [[ "$failures" -eq 0 ]]; then
   echo "ENVIRONMENT CHECK: PASS"

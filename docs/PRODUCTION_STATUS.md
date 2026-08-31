@@ -30,10 +30,14 @@ Produce an approximately 105-second OwnerOps WebMCP demo film that combines prem
 - Environment checker passed with Git, Node/npm, ffmpeg/ffprobe, four pinned tool checkouts, product branch, and all nine WebMCP tool names
 - Remotion setup composition typechecked, enumerated, rendered at 1920×1080/30 fps/H.264/yuv420p/AAC 48 kHz, and its spot frame was visually inspected
 - Playwright captured and visually inspected `assets/product/opening-state-overscan.png` from the real deployed OwnerOps UI
+- Windows OS capture harness verified for exact ChatGPT Desktop discovery/focus, ffmpeg master-recording configuration, five global phase markers, take metadata, and automatic review-clip extraction
+- macOS detection and preflight prepared; recording remains explicitly unsupported until a trustworthy non-invasive global marker mechanism is available
+- Capture-plan unit tests passed, Windows preflight passed against the running ChatGPT Desktop app, and a synthetic master produced five H.264/yuv420p/30 fps + AAC/48 kHz clips
 
 ## Required before timeline assembly
 
 - Record and inspect all five real ChatGPT/WebMCP clips.
+- Run `npm run proof:preflight`, then use the supported Windows harness for one continuous take with exactly one candidate edit.
 - Confirm the continuous human-edit → exact-agent-review → REVIEWED → human-Apply sequence.
 - Capture current OwnerOps product-only shots through Playwright/demo-video tooling.
 - Build and inspect one representative cinematic proof of concept.

@@ -28,6 +28,8 @@ Keep every film-production artifact synchronized to this exact nine-tool contrac
 
 Never reconstruct ChatGPT, Site Tools, tool calls, messages, `REVIEWED`, or the causal human-edit/re-review/apply proof. Do not splice unrelated states as if connected. Apply must remain unavailable until the real review completes. Keep the real cursor visible for the human edit and final human Apply.
 
+Use the OS capture harness only for window focus, recording, phase markers, metadata, and clip extraction. It must never click, type, or edit inside ChatGPT or OwnerOps. During the critical take, perform exactly one direct candidate edit; do not undo, redo, or make a second candidate edit.
+
 Use Playwright against real rendered OwnerOps UI for product-only capture. Use deterministic scripts before MCP when scripting is simpler. Use Remotion only for editorial treatment around authentic footage.
 
 ## Visual and audio direction

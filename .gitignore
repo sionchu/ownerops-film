@@ -8,12 +8,14 @@ tools/
 assets/**/*.mp4
 assets/**/*.mov
 assets/**/*.webm
+assets/chatgpt/takes/
 renders/*.mp4
 renders/*.mov
 renders/*.webm
 review/playwright-mcp/
 review/contact-sheets/
 review/spot-frames/
+review/harness-smoke/
 test-results/
 playwright-report/
 .DS_Store

@@ -1,6 +1,6 @@
 ---
 name: ownerops-cinematic-demo
-description: Orchestrate authentic OwnerOps WebMCP demo-video production, including product-truth sync, real ChatGPT capture gates, Playwright product capture, restrained Remotion assembly, sound, rendering, and evidence review. Use only for the ownerops-film production repository; never modify the OwnerOps product.
+description: Orchestrate authentic OwnerOps WebMCP demo-video production, including product-truth sync, OS-level real ChatGPT proof capture, Playwright product capture, restrained Remotion assembly, sound, rendering, and evidence review. Use only for the ownerops-film production repository; never modify the OwnerOps product.
 ---
 
 # OwnerOps Cinematic Demo
@@ -52,17 +52,19 @@ Do not substitute any other count or read/write split for this exact nine-tool c
 2. Run `scripts/check-env.sh` and distinguish missing tools from working tools.
 3. Read `docs/SHOTLIST_105S_CURRENT.md` and `docs/CAPTURE_MATRIX.md`.
 4. Check for all five authentic files in `assets/chatgpt/` using `docs/REAL_WEBMCP_RECORDING_CHECKLIST.md`.
-5. Stop causal-sequence assembly if authentic footage is missing. Continue safe product-only capture and graphics work.
-6. Read the pinned demo-video skill and use its engineering pipeline without inheriting its default skin.
-7. Read pinned video-shotcraft `SKILL.md`, `references/pipeline.md`, gallery index, only the selected shot cards, and their real demo implementations. Use autonomous free-creation mode; derive a language from OwnerOps rather than reskinning a generic template.
-8. Read the relevant pinned Remotion skills before authoring or rendering the timeline.
-9. Capture product-only shots from real rendered OwnerOps UI at a larger size than the final crop when possible.
-10. Build one representative cinematic proof of concept. Inspect its actual frames or contact sheet before expanding it.
-11. Assemble the full 1920×1080, 30 fps Remotion timeline around authentic footage.
-12. Add restrained sound. Keep BGM and SFX separable so a SFX-only mix remains practical.
-13. Render H.264/yuv420p with AAC at 48 kHz.
-14. Generate and inspect a contact sheet and selected spot frames. Check crop, text, holds, causality, and visual continuity.
-15. Play the final MP4 end-to-end and report only genuine remaining blockers.
+5. If authentic footage is missing, run the OS harness preflight. On supported Windows hosts, record the visible browser zoom and use `npm run proof:record -- --take TAKE_ID --browser-zoom PERCENT`; on macOS, report the current preflight-only boundary rather than claiming recording support.
+6. Keep the harness limited to single-window focus, ffmpeg recording, global phase markers, metadata, and clip extraction. Never inject ChatGPT/OwnerOps clicks or typing. Require exactly one direct human candidate edit, followed by real human exact re-review and final Apply.
+7. Stop causal-sequence assembly if authentic footage is missing. Continue safe product-only capture and graphics work.
+8. Read the pinned demo-video skill and use its engineering pipeline without inheriting its default skin.
+9. Read pinned video-shotcraft `SKILL.md`, `references/pipeline.md`, gallery index, only the selected shot cards, and their real demo implementations. Use autonomous free-creation mode; derive a language from OwnerOps rather than reskinning a generic template.
+10. Read the relevant pinned Remotion skills before authoring or rendering the timeline.
+11. Capture product-only shots from real rendered OwnerOps UI at a larger size than the final crop when possible.
+12. Build one representative cinematic proof of concept. Inspect its actual frames or contact sheet before expanding it.
+13. Assemble the full 1920×1080, 30 fps Remotion timeline around authentic footage.
+14. Add restrained sound. Keep BGM and SFX separable so a SFX-only mix remains practical.
+15. Render H.264/yuv420p with AAC at 48 kHz.
+16. Generate and inspect a contact sheet and selected spot frames. Check crop, text, holds, causality, and visual continuity.
+17. Play the final MP4 end-to-end and report only genuine remaining blockers.
 
 ## Authenticity gate
 
@@ -78,6 +80,8 @@ These elements must come from one real ChatGPT Desktop/in-app browser and OwnerO
 - final human Apply
 
 Never reconstruct ChatGPT UI or Site Tools in React or Remotion. Never fabricate messages, tool counts, `REVIEWED`, or causal continuity. Never make Apply appear available before review. Keep the real cursor visible during the human edit and final Apply, and minimize it elsewhere.
+
+The capture harness must not automate business interaction. Its global `F8` markers only record phase boundaries. The operator makes one candidate edit exactly once, then does not undo, redo, or edit again. The re-review prompt and final Apply remain real human actions in the same take.
 
 Expected authentic files:
 

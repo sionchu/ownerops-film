@@ -29,6 +29,8 @@ Exact versions are committed in `package.json` and `package-lock.json`.
 - npm 10 or newer
 - ffmpeg and ffprobe with H.264/AAC support
 - Git Bash, macOS/Linux shell, or WSL for the bootstrap scripts
+- Windows PowerShell 5.1 or newer for the supported Windows focus/hotkey path
+- `osascript` and FFmpeg `avfoundation` for macOS preflight; macOS recording is not yet enabled
 
 The bootstrap does not install paid software, alter global Codex configuration, or write to the OwnerOps product repository.
 
