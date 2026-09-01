@@ -1,6 +1,6 @@
 # OwnerOps Film Production Status
 
-Updated: 2026-08-31
+Updated: 2026-09-01
 
 ## Objective
 
@@ -11,7 +11,7 @@ Produce an approximately 105-second OwnerOps WebMCP demo film that combines prem
 - Film repository scaffold: complete
 - Product source: `sionchu/ownerops-webmcp`
 - Product branch: `re0/ai-store-manager`
-- Product commit: `2da46b07c1aeaf57d10edadba2b377b2d0d9c8f5`
+- Product commit: `db9fa2054895ea5fb1e45ae391f07df82e35447e`
 - Canonical WebMCP tools: 9
 - Remotion target: 1920×1080, 30 fps, H.264, yuv420p, AAC 48 kHz
 
