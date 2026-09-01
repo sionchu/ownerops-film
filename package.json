@@ -7,6 +7,9 @@
     "studio": "remotion studio src/index.ts",
     "compositions": "remotion compositions src/index.ts",
     "render:setup-check": "remotion render src/index.ts OwnerOpsFilmSetupCheck renders/setup-check.mp4 --codec h264 --pixel-format yuv420p --overwrite",
+    "prepare:film": "node scripts/prepare-film-media.mjs",
+    "render:poc": "npm run prepare:film && remotion render src/index.ts OwnerOpsCinematicPoC renders/ownerops-poc.mp4 --codec h264 --pixel-format yuv420p --audio-codec aac --overwrite",
+    "render:poc:sfx-only": "npm run prepare:film && remotion render src/index.ts OwnerOpsCinematicPoC renders/ownerops-poc-sfx-only.mp4 --codec h264 --pixel-format yuv420p --audio-codec aac --props=props-sfx-only.json --overwrite",
     "capture:product": "node scripts/capture/capture-product.mjs",
     "proof:preflight": "node scripts/capture/record-webmcp-proof.mjs preflight",
     "proof:record": "node scripts/capture/record-webmcp-proof.mjs record",
@@ -17,6 +20,7 @@
   "dependencies": {
     "@remotion/bundler": "4.0.518",
     "@remotion/cli": "4.0.518",
+    "@remotion/media": "4.0.518",
     "playwright": "1.62.1",
     "react": "19.2.8",
     "react-dom": "19.2.8",

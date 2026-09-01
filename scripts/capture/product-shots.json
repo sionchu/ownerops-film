@@ -11,6 +11,94 @@
       "actions": [
         {"type": "wait", "ms": 1500}
       ]
+    },
+    {
+      "id": "today-brief",
+      "path": "/#today",
+      "viewport": {"width": 2200, "height": 1400},
+      "deviceScaleFactor": 1,
+      "selector": "#today",
+      "actions": [{"type": "wait", "ms": 1200}, {"type": "scrollIntoView", "selector": "#today"}]
+    },
+    {
+      "id": "schedule-week",
+      "path": "/#schedule",
+      "viewport": {"width": 2400, "height": 1500},
+      "deviceScaleFactor": 1,
+      "selector": ".schedule-panel",
+      "actions": [{"type": "wait", "ms": 1200}, {"type": "scrollIntoView", "selector": ".schedule-panel"}]
+    },
+    {
+      "id": "schedule-month",
+      "path": "/#schedule",
+      "viewport": {"width": 2400, "height": 1500},
+      "deviceScaleFactor": 1,
+      "selector": ".schedule-panel",
+      "actions": [{"type": "wait", "ms": 1200}, {"type": "click", "selector": "[data-testid='schedule-view-month']"}, {"type": "wait", "ms": 700}]
+    },
+    {
+      "id": "schedule-day",
+      "path": "/#schedule",
+      "viewport": {"width": 2400, "height": 1500},
+      "deviceScaleFactor": 1,
+      "selector": ".schedule-panel",
+      "actions": [{"type": "wait", "ms": 1200}, {"type": "click", "selector": "[data-testid='schedule-view-day']"}, {"type": "wait", "ms": 700}]
+    },
+    {
+      "id": "analysis-sales",
+      "path": "/#analysis",
+      "viewport": {"width": 2200, "height": 1500},
+      "deviceScaleFactor": 1,
+      "selector": "[data-testid='sales-evidence']",
+      "actions": [{"type": "wait", "ms": 1200}, {"type": "open", "selector": "[data-testid='sales-evidence']"}, {"type": "scrollIntoView", "selector": "[data-testid='sales-evidence']"}, {"type": "wait", "ms": 500}]
+    },
+    {
+      "id": "analysis-costs-stock",
+      "path": "/#analysis",
+      "viewport": {"width": 2200, "height": 1600},
+      "deviceScaleFactor": 1,
+      "selector": "[data-testid='cost-analysis']",
+      "actions": [{"type": "wait", "ms": 1200}, {"type": "open", "selector": "[data-testid='cost-analysis']"}, {"type": "scrollIntoView", "selector": "[data-testid='cost-analysis']"}, {"type": "wait", "ms": 500}]
+    },
+    {
+      "id": "store-inventory",
+      "path": "/#store",
+      "viewport": {"width": 2200, "height": 1500},
+      "deviceScaleFactor": 1,
+      "selector": "#store",
+      "actions": [{"type": "wait", "ms": 1200}, {"type": "click", "selector": "#store [role='tab']:nth-of-type(3)"}, {"type": "wait", "ms": 500}, {"type": "scrollIntoView", "selector": "#store"}]
+    },
+    {
+      "id": "market-seoul-ko",
+      "path": "/",
+      "viewport": {"width": 2200, "height": 1400},
+      "deviceScaleFactor": 1,
+      "fullPage": false,
+      "actions": [{"type": "wait", "ms": 1000}, {"type": "selectOption", "selector": "[data-testid='market-select']", "value": "kr-seoul"}, {"type": "wait", "ms": 900}]
+    },
+    {
+      "id": "market-nyc-en",
+      "path": "/",
+      "viewport": {"width": 2200, "height": 1400},
+      "deviceScaleFactor": 1,
+      "fullPage": false,
+      "actions": [{"type": "wait", "ms": 1000}, {"type": "selectOption", "selector": "[data-testid='market-select']", "value": "us-nyc"}, {"type": "wait", "ms": 900}]
+    },
+    {
+      "id": "market-tokyo-ja",
+      "path": "/",
+      "viewport": {"width": 2200, "height": 1400},
+      "deviceScaleFactor": 1,
+      "fullPage": false,
+      "actions": [{"type": "wait", "ms": 1000}, {"type": "selectOption", "selector": "[data-testid='market-select']", "value": "jp-tokyo"}, {"type": "wait", "ms": 900}]
+    },
+    {
+      "id": "market-seoul-return",
+      "path": "/",
+      "viewport": {"width": 2200, "height": 1400},
+      "deviceScaleFactor": 1,
+      "fullPage": false,
+      "actions": [{"type": "wait", "ms": 1000}, {"type": "selectOption", "selector": "[data-testid='market-select']", "value": "kr-seoul"}, {"type": "wait", "ms": 900}]
     }
   ]
 }

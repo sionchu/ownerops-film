@@ -29,7 +29,10 @@ try {
       if (action.type === 'click') await page.locator(action.selector).click();
       if (action.type === 'hover') await page.locator(action.selector).hover();
       if (action.type === 'fill') await page.locator(action.selector).fill(action.value ?? '');
+      if (action.type === 'selectOption') await page.locator(action.selector).selectOption(action.value);
       if (action.type === 'waitFor') await page.locator(action.selector).waitFor({state: action.state ?? 'visible'});
+      if (action.type === 'scrollIntoView') await page.locator(action.selector).scrollIntoViewIfNeeded();
+      if (action.type === 'open') await page.locator(action.selector).evaluate((element) => { element.open = true; });
       if (action.type === 'wait') await page.waitForTimeout(action.ms ?? 500);
     }
 

@@ -12,9 +12,13 @@ assets/chatgpt/takes/
 renders/*.mp4
 renders/*.mov
 renders/*.webm
+public/media/
+assets/audio/
 review/playwright-mcp/
 review/contact-sheets/
 review/spot-frames/
+review/product-capture-contact-sheet.png
+review/proof-contact-sheets/
 review/harness-smoke/
 test-results/
 playwright-report/
